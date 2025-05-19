@@ -1,0 +1,84 @@
+@use './helpers/abstracts' as *;
+
+.tabs__block {
+    margin-bottom: 3rem;
+}
+
+.tabs_nav_w {
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+// .tabs__nav {
+   
+// }
+
+.tabs_nav__list {
+	display: flex;
+	column-gap: 6px;
+    width: 60rem;
+    border: 0.2rem solid #FF6D25;
+    border-radius: 2rem;
+    
+}
+
+.tabs_nav__link {
+    min-height: 7.5rem;
+    min-width: 19rem;
+    border-style: solid;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FF6D25;
+}
+
+.tabs_nav__link.active {
+	background-color: #FF6D25;
+    color: white;
+    font-weight: 700;
+}
+
+.tabs_nav__link--text1 {
+    font-family: $font_1;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.tabs_nav__link--text2 {
+    font-family: $font_1;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.tabs_content__item {
+	display: none;
+}
+
+.tabs_content__item.active {
+	display: block;
+}
+
+.content__tab__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.tab__img {
+    border-radius: 20px;
+}
+
+.content__tab__block--text {
+    font-family: $font_1;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+
