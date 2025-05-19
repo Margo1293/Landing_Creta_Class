@@ -1,0 +1,60 @@
+@use './helpers/abstracts' as *;
+
+.slider__section {
+    position: relative;
+    padding: 0 17rem;
+}
+
+// .slider_block {
+    
+// }
+
+// .slider_block__in {
+    
+// }
+
+.slider_block__item {
+    background-color: #FCE4EC;
+    border-radius: 4rem;
+    padding: 3rem 3rem 7rem;
+}
+
+.slider_block__title {
+    font-family: $font_3;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.25;
+    letter-spacing: 0%;
+
+}
+
+.slider_block__list {
+    font-family: $font_3;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    letter-spacing: 0%;
+    color: #BD6E89;
+}
+
+.slider_block__btn {
+    background-color: #974E24;
+    width: 2rem;
+    height: 0.1rem;
+    
+
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+
+    &.slider_block__btn--prev {
+        left: 0rem;
+        
+    }
+
+    &.slider_block__btn--next {
+        right: 0rem;
+    }
+}
+
+
