@@ -1,4 +1,6 @@
 @use './helpers/reset';
 @use './base';
+@use './blocks/hero.scss';
 @use './blocks/slider.scss';
-@use './blocks/tabs.scss'
+@use './blocks/tabs.scss';
+@use './blocks/accordion.scss';

@@ -38,10 +38,9 @@
 }
 
 .slider_block__btn {
-    background-color: #974E24;
-    width: 2rem;
-    height: 0.1rem;
-    
+    color: #974E24;
+    font-size: 2rem;
+    font-weight: 700;
 
     position: absolute;
     top: 50%;
@@ -55,6 +54,12 @@
     &.slider_block__btn--next {
         right: 0rem;
     }
+}
+
+.slider_block__pag {
+    display: flex;
+	justify-content: center;
+    margin-top: 2rem;
 }
 
 

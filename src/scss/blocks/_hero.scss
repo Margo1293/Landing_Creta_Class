@@ -1,0 +1,129 @@
+@use './helpers/abstracts' as *;
+
+.hero__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__title {
+    font-family: $font_1;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 7rem;
+    letter-spacing: 0%;
+    margin-bottom: 11rem;
+}
+
+.hero__form__title {
+    font-family: $font_1;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.hero__form--w {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5rem;
+	margin-bottom: 3rem;
+}
+
+.hero__label {
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	height: 6rem;
+	width: 13rem;
+	border-top: 0.2rem solid #00000026;
+    border-left: 0.2rem solid #00000026;
+    border-right: 0.2rem solid #00000026;
+	border-bottom: 0.5rem solid #00000026;
+	border-radius: 0.8rem;
+	font-size: 2rem;
+	user-select: none;
+	cursor: pointer;
+
+	.hero__radio {
+        font-family: $font_1;
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 100%;
+        text-transform: lowercase;
+		appearance: none;
+        z-index: -1;
+	}
+    
+	&:has(.hero__radio:checked) {
+		color: #2CC84D;
+	}
+}
+
+
+.hero__form--btn {
+    font-family: $font_1;
+    font-weight: 700;
+    font-size: 1.8rem;
+    max-width: 32.8rem;
+	height: 6.6rem;
+	border-radius: 0.9rem;
+	
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 100%;
+	color: white;
+    background: linear-gradient(93.93deg, #FF7B3A 69.26%, rgba(255, 123, 58, 0.59) 80.39%, #FF7B3A 95.95%);
+	margin-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+	cursor: pointer;
+    
+}
+
+.hero__form--btn:hover {
+    background: linear-gradient(93.93deg, #2CC84D 69.26%, rgba(120, 255, 58, 0.59) 80.39%, #2CC84D 95.95%);
+	background-color: #2CC84D;
+}
+
+.hero__form--discount {
+    font-family: $font_1;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    color: #000000BF;
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    font-family: $font_1;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: line-through;
+    color: black;
+}
+
+.discount {
+    color: #2CC84D;
+}
+
+.hero__form--descr {
+    font-family: $font_1;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #00000080;
+}
+
+.hero__link {
+    color: #FF7C3B;
+    text-transform: uppercase;
+}

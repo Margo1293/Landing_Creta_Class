@@ -19,7 +19,7 @@ const swiper = new Swiper('.swiper', {
 
 function tabs(tabsBlockSelector) {
 	const tabsNavAll = document.querySelectorAll(`${tabsBlockSelector} [data-tab]`);
-	const tabsContentAll = document.querySelectorAll(`${tabsBlockSelector} [data-tab-content]`);
+	const tabsContentAll = document.querySelectorAll(`${tabsBlockSelector} [tabs_content]`);
 
 	tabsNavAll.forEach(function (item) {
 		item.addEventListener('click', function (event) {
@@ -34,9 +34,27 @@ function tabs(tabsBlockSelector) {
 				k.classList.remove('active');
 			});
 			const dataTab = event.target.dataset.tab;
-			document.querySelector(`[data-tab-content]#${dataTab}`).classList.add('active');
+			document.querySelector(`[tabs_content]#${dataTab}`).classList.add('active');
 		});
 	});
 }
 
 tabs('.tabs__block');
+
+function accordion(accordionBlockSelector) {
+	const accordionTitleAll = document.querySelectorAll(`${accordionBlockSelector} [data-accordion-title]`);
+
+	accordionTitleAll.forEach(function (item) {
+		item.addEventListener('click', function () {
+			if (!item.classList.contains('active')) {
+				accordionTitleAll.forEach(function (i) {
+					i.classList.remove('active');
+				});
+			}
+
+			item.classList.toggle('active');
+		});
+	});
+}
+
+accordion('.accordion__block');
