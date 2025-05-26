@@ -63,7 +63,7 @@
 }
 
 
-.hero__form--btn {
+%hero__form--btn {
     font-family: $font_1;
     font-weight: 700;
     font-size: 1.8rem;
@@ -80,13 +80,18 @@
     padding-left: 4rem;
     padding-right: 4rem;
 	cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(93.93deg, #2CC84D 69.26%, rgba(120, 255, 58, 0.59) 80.39%, #2CC84D 95.95%);
+	    background-color: #2CC84D;
+    }
     
 }
 
-.hero__form--btn:hover {
-    background: linear-gradient(93.93deg, #2CC84D 69.26%, rgba(120, 255, 58, 0.59) 80.39%, #2CC84D 95.95%);
-	background-color: #2CC84D;
+.btn__hero {
+    @extend %hero__form--btn   
 }
+
 
 .hero__form--discount {
     font-family: $font_1;

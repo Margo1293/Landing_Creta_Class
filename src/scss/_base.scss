@@ -77,14 +77,26 @@ body {
 
 header,
 footer {
-	padding: 30px 6px;
+	max-width: 154rem;
+	width: 100%;
+
+	margin: 0 auto;
+	padding: 0 2rem;
 	display: flex;
 	align-items: center;
-	min-height: 120px;
-	font-size: 50px;
+	min-height: 12rem;
 	text-align: center;
 	justify-content: center;
-	background-color: #ccc;
+
+	&.header__block {
+		max-width: 133rem;
+		margin: 0 auto;
+	}
+
+	&.footer__block {
+		max-width: 133rem;
+		margin: 0 auto;
+	}
 
 	// @include bp($point_2, min) {
 	// 	background-color: tomato;
